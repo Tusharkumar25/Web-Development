@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #DDDDDD;
+    color: #333;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.logo-part1 {
+    color: #f7c400;
+}
+
+.logo-part2 {
+    color: #333;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 10px;
+}
+
+.nav-links li a {
+    color: #333;
+    text-decoration: none;
+    padding: 6px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+header .search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+header .search-form input {
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+}
+
+header .search-form button {
+    padding: 3px 8px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content {
+    flex: 1;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.hero {
+    background: url('image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    min-height: 100vh;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,1.9);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+footer {
+    background-color: #DDDDDD;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 1000;
+}
